@@ -9,11 +9,51 @@ body {
 	min-width: 300px;
 }
 
+.vertical-margin-sm {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.burger-info {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 #burger-img {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 }
 
 .burger-page {
-	margin-top: 3vw;
+	margin-top: 2vw;
+}
+
+.eat-burgers {
+	background-color: #659DBD;
+	color: #FFFFFF;
+	padding: 5px 15px 5px 25px;
+}
+
+.eaten-burgers {
+	background-color: #E3E3E3;
+	color: #B0B0B0;
+	padding: 5px 0px 5px 25px;
+}
+
+.burger-item {
+	margin: 5px;
+}
+
+.burger-item-row {
+	margin: 0px 0px 15px 0px;
+}
+
+.burger-btn {
+	color: #608d41;
+}
+
+.burger-btn:hover {
+	cursor: pointer;
+	background-color: #608d41;
+	color: #FFFFFF;
 }

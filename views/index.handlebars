@@ -1,56 +1,43 @@
-<div class="container burger-page">
+<div class="container-fluid burger-page">
   <!-- Burger Image -->
   <div  class="text-center">
   <img id="burger-img" class="img-fluid" src="assets/img/da-burger.png">
 </div>
 
-<h1 class="text-center">Eat-Da-Burger</h1>
+<h1 class="text-center vertical-margin-sm">Eat-Da-Burger</h1>
 
-<div class="row">
-  <div class="col-md-6">
-  <ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      <li>{{burger_name}}</li>
-    {{/unless}}
-  {{/each}}
-</ul>
+<div class="row burger-info">
+  <div class="col-md-6 col-sm-6">
+    <ol class="">
+    {{#each burgers}}
+      {{#unless devoured}}
+        {{> uneaten-block}}
+      {{/unless}}
+    {{/each}}
+    </ol>
   </div>
-  <div class="col-md-6">
-    
+  <div class="col-md-6 col-sm-6">
+    <ol>
+    {{#each burgers}}
+      {{#if devoured}}
+        {{> eaten-block}}
+      {{/if}}
+    {{/each}}
+    </ol> 
   </div>
 </div>
 
-<!--<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>-->
-
-
-<div class="row justify-content-md-center">
-  <div class="col-md-6">
+<div class="row justify-content-sm-center vertical-margin-sm">
+  <div class="col-sm-6">
+    <p class="text-center vertical-margin-sm">Enter the name of a Burger you would like to eat. </p>
     <form class="create-form ls">
       <div class="form-group">
-        <textarea class="form-control" id="new-burger" name="burger" rows="3"></textarea>
+        <textarea class="form-control" id="new-burger" name="burger" rows="2"></textarea>
       </div>
       <div class="text-center">
-        <button class="btn" type="submit">Add Burger</button>
+        <button class="btn vertical-margin-sm burger-btn" id="add-burger" type="submit">Add Burger</button>
       </div>
       
-      <p class="text-center">Enter the name of a Burger you would like to eat. </p>
     </form>
   </div>
 </div>
