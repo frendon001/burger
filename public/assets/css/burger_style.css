@@ -1,0 +1,19 @@
+body {
+	/*background-color: #659DBD;*/
+	background-color: #FBEEC1;
+	color: #373D3F;
+	/*color: #373D3F;*/
+}
+
+.container {
+	min-width: 300px;
+}
+
+#burger-img {
+	width: 200px;
+	height: 200px;
+}
+
+.burger-page {
+	margin-top: 3vw;
+}

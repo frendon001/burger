@@ -1,0 +1,60 @@
+<div class="container burger-page">
+  <!-- Burger Image -->
+  <div  class="text-center">
+  <img id="burger-img" class="img-fluid" src="assets/img/da-burger.png">
+</div>
+
+<h1 class="text-center">Eat-Da-Burger</h1>
+
+<div class="row">
+  <div class="col-md-6">
+  <ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      <li>{{burger_name}}</li>
+    {{/unless}}
+  {{/each}}
+</ul>
+  </div>
+  <div class="col-md-6">
+    
+  </div>
+</div>
+
+<!--<ul>
+  {{#each cats}}
+    {{#unless sleepy}}
+      {{> cats/cat-block sleep=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Cats that are sleepy!</h2>
+
+<ul>
+  {{#each cats}}
+    {{#if sleepy}}
+      {{> cats/cat-block sleep=false}}
+    {{/if}}
+  {{/each}}
+</ul>-->
+
+
+<div class="row justify-content-md-center">
+  <div class="col-md-6">
+    <form class="create-form ls">
+      <div class="form-group">
+        <textarea class="form-control" id="new-burger" name="burger" rows="3"></textarea>
+      </div>
+      <div class="text-center">
+        <button class="btn" type="submit">Add Burger</button>
+      </div>
+      
+      <p class="text-center">Enter the name of a Burger you would like to eat. </p>
+    </form>
+  </div>
+</div>
+
+</div>
+
+
