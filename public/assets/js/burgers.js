@@ -4,7 +4,7 @@ $(function() {
     var id = $(this).data("id");
 
     var devourState = {
-      devoured: false
+      devoured: true
     };
 
     console.log(devourState);
@@ -15,7 +15,7 @@ $(function() {
       data: devourState
     }).then(
       function() {
-        console.log("changed devoured to", false);
+        console.log("changed devoured to", true);
         // Reload the page to get the updated list
         location.reload();
       }
