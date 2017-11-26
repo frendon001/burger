@@ -11,6 +11,7 @@ https://morning-fjord-91119.herokuapp.com/
 
 2. Add a new burger by adding a burger name and then selecting "Add Burger".
 
+![Burger App](/public/assets/img/burger-app.png)
 
 ## Technologies Used
 
